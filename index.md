@@ -52,7 +52,7 @@ Where equivalent code exists in two related classes, the hierarchy can usually b
 - Maintenance: Every time you create a new sub class, you have to look at and possibly overwrite every method defined in the super class.
 - Problems when new sub class does not have behaviour of super class. E.g. RubberDuck can not fly() -> you need to overwrite the method in the sub class to do nothing -> not a good solution -> better: use interface Flyable (Problem with interface: completely destroys the reuse for those behaviours, so it just creates a different maintenance nightmare. E.g. imagine you want to make a little change to the flying behaviour.. in all 48 of the flying Duck subclasses. )
 
-## Singleton
+## Singleton Design Pattern
 The Singleton Pattern ensures a class has only one instance and provides a global point of access to it.
 
 **Advantages**
@@ -78,7 +78,7 @@ public static Singleton getInstance() {
 ```
 
 
-## Adapter
+## Adapter Design Pattern
 Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 The Adapter Pattern **converts the interface of a class into another interface** the client expect.
 **Advantages**
@@ -87,6 +87,25 @@ The Adapter Pattern **converts the interface of a class into another interface**
 
 **Disadvantages**
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
+
+## Observer Design Pattern
+The Observer Pattern defines a one-to-many dependency between objects to that when one object changes state, all of its dependents are notified and updates automatically.
+
+The observer pattern provides an object design where subjects and observers are loosely coupled. Why?
+- The only thing the subject knows about an observer is that is implements a certain interface.
+- We can add/remove observers at any time (also in runtime)
+- We never need to modify the subjects to add new types of observers
+- We can reuse subjects or observers independently of each other
+- Changes to either the subject or an observer will not affect the other
+- Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
+
+**Advantages**
+- Open/Closed Principle. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).
+- You can establish relations between objects at runtime.
+
+**Disadvantages**
+- Subscribers are notified in random order
+
 
 ```markdown
 Syntax highlighted code block
@@ -106,7 +125,7 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-## Singleton
+## Design Pattern
 
 **Advantages**
 
