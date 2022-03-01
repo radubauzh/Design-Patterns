@@ -82,6 +82,9 @@ public static Singleton getInstance() {
 ## Adapter Design Pattern
 Adapter lets classes work together that couldn’t otherwise because of incompatible interfaces.
 The Adapter Pattern **converts the interface of a class into another interface** the client expect.
+
+![Image](adapter.png)
+
 **Advantages**
 - Single Responsibility Principle. You can separate the interface or data conversion code from the primary business logic of the program.
 - Open/Closed Principle. You can introduce new types of adapters into the program without breaking the existing client code, as long as they work with the adapters through the client interface.
@@ -89,7 +92,6 @@ The Adapter Pattern **converts the interface of a class into another interface**
 **Disadvantages**
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
 
-![Image](adapter.png)
 
 ## Observer Design Pattern
 The Observer Pattern defines a one-to-many dependency between objects to that when one object changes state, all of its dependents are notified and updates automatically.
