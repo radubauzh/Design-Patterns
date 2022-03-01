@@ -1,12 +1,32 @@
-## Welcome to GitHub Pages
+## Overview
 
-You can use the [editor on GitHub](https://github.com/radubauzh/Design-Patterns/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Design Patterns which I cover on this page
+1. Singleton Design Pattern
+2. Adapter Design Pattern
+3. Composite Design Pattern
+4. Observer Design Pattern
+5. Command Design Pattern
+6. State Design Pattern
+7. Decorator Design Pattern
+8. Strategy Design Pattern
+9. Iterator Design Pattern
+10. MVC Design Pattern
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### What is a Design Pattern?
+
+A Design Pattern is a pattern that captures a solution to a recurring design problem
+• It is not a pattern for implementation problems
+• It is not a ready-made solution that has to be applied
+A design pattern is a description of communicating objects and classes that are customized to solve a general design problem in a particular context.
+A design pattern is a kind of blueprint
+Consists of different parts
+• All of these parts make up the pattern!
+• When we talk about the pattern we therefore mean all of these parts together (not only the class diagram..)
+
 
 ### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Lec 1
 
 ```markdown
 Syntax highlighted code block
@@ -26,12 +46,4 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/radubauzh/Design-Patterns/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
