@@ -123,11 +123,84 @@ The Command Pattern encapsulates a request as an object, thereby letting you par
 - The code may become more complicated since you’re introducing a whole new layer between
  
  
- 
- 
- 
- 
- 
+ ## Iterator Design Pattern
+The Iterator Pattern provides a way to access the internal objects of an aggregate object sequentially without exposing anything about the internal structure of the encapsulation object. It provides access to a collection of objects encapsulated within another object without violating it’s encapsulation property
+**Advantages**
+- Single Responsibility Principle. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.
+- Open/Closed Principle. You can implement new types of collections and iterators and pass them to existing code without breaking anything.
+- You can iterate over the same collection in parallel because each iterator object contains its own iteration state.
+- For the same reason, you can delay an iteration and continue it when needed.
+
+
+**Disadvantages**
+- Applying the pattern can be an overkill if your app only works with simple collections.
+- Using an iterator may be less efficient than going through elements of some specialized collections directly.
+
+ ## State Design Pattern
+The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+**Advantages**
+- Flexible
+- Single Responsibility Principle. Organize the code related to particular states into separate classes.
+- Open/Closed Principle. Introduce new states without changing existing state classes or the context.
+- Simplify the code of the context by eliminating bulky state machine conditionals.
+**Disadvantages**
+- Applying the pattern can be overkill if a state machine has only a few states or rarely changes.
+
+## Composite Design Pattern
+The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. (leaves)
+**Advantages**
+- You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage.
+- Open/Closed Principle. You can introduce new element types into the app without breaking the existing code, which now works with the object tree.
+
+**Disadvantages**
+- It might be difficult to provide a common interface for classes whose functionality differs too much. In certain scenarios, you’d need to overgeneralize the component interface, making it harder to comprehend.
+- The Composite Pattern allows us to build structures of objects in the form of trees that contain both compositions of objects and individual objects as nodes.
+- Using a composite structure, we can apply the same operations over both composites and individual objects.
+- In other words, in most cases we can ignore the differences between compositions of objects and individual objects
+
+
+## Strategy Design Pattern
+The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
+**Advantages**
+- You can swap algorithms used inside an object at runtime.
+- You can isolate the implementation details of an algorithm from the code that uses it.
+- You can replace inheritance with composition.
+- Open/Closed Principle. You can introduce new strategies without having to change the context.
+
+**Disadvantages**
+- If you only have a couple of algorithms and they rarely change, there’s no real reason to overcomplicate the program with new classes and interfaces that come along with the pattern.
+- Clients must be aware of the differences between strategies to be able to select a proper one.
+- A lot of modern programming languages have functional type support that lets you implement different versions of an algorithm inside a set of anonymous functions. Then you could use these functions exactly as you’d have used the strategy objects, but without bloating your code with extra classes and interfaces.
+
+## Decorator Design Pattern
+The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+**Advantages**
+- You can extend an object’s behavior without making a new subclass.
+- You can add or remove responsibilities from an object at runtime.
+- You can combine several behaviors by wrapping an object into multiple decorators. 
+- Single Responsibility Principle. You can divide a monolithic class that implements many possible variants of behavior into several smaller classes.
+
+
+**Disadvantages**
+- It’s hard to remove a specific wrapper from the wrappers stack.
+- It’s hard to implement a decorator in such a way that its behavior doesn’t depend on the order in the decorators stack.
+- The initial configuration code of layers might look pretty ugly.
+
+
+
+## Compound Pattern - MVC
+It is a common architectural pattern which is used to design and create interfaces and the structure of an application. This pattern divides the application into three parts that are dependent and connected to each other. These designs are used to distinguish the presentation of data from the way the data is accepted from the user to the data that is being shown.
+
+**Advantages**
+- Multiple views can be made to models
+- The partition of duties helps the developer in future developments and upgradations.
+- The MVC theory works have low coupling behavior among the models, views, and controllers.
+- Multiple developers can work on models, views, and controllers at the same time
+- The views for a required model are grouped together.
+
+
+
 ```markdown
 Syntax highlighted code block
 
