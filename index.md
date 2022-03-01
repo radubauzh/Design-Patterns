@@ -55,6 +55,7 @@ Where equivalent code exists in two related classes, the hierarchy can usually b
 ## Singleton Design Pattern
 The Singleton Pattern ensures a class has only one instance and provides a global point of access to it.
 ![Image](singleton.png)
+
 **Advantages**
 - Singleton instance fields don’t take up space in the global namespace
 - Singletons may be lazily initialized (to be discussed further)
@@ -87,7 +88,9 @@ The Adapter Pattern **converts the interface of a class into another interface**
 
 **Disadvantages**
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
+
 ![Image](adapter.png)
+
 ## Observer Design Pattern
 The Observer Pattern defines a one-to-many dependency between objects to that when one object changes state, all of its dependents are notified and updates automatically.
 
@@ -98,7 +101,9 @@ The observer pattern provides an object design where subjects and observers are 
 - We can reuse subjects or observers independently of each other
 - Changes to either the subject or an observer will not affect the other
 - Loosely coupled designs allow us to build flexible OO systems that can handle change because they minimize the interdependency between objects.
+
 ![Image](observer.png)
+
 **Advantages**
 - Open/Closed Principle. You can introduce new subscriber classes without having to change the publisher’s code (and vice versa if there’s a publisher interface).
 - You can establish relations between objects at runtime.
@@ -129,7 +134,9 @@ The Command Pattern encapsulates a request as an object, thereby letting you par
  
  ## Iterator Design Pattern
 The Iterator Pattern provides a way to access the internal objects of an aggregate object sequentially without exposing anything about the internal structure of the encapsulation object. It provides access to a collection of objects encapsulated within another object without violating it’s encapsulation property
+
 ![Image](iterator.png)
+
 **Advantages**
 - Single Responsibility Principle. You can clean up the client code and the collections by extracting bulky traversal algorithms into separate classes.
 - Open/Closed Principle. You can implement new types of collections and iterators and pass them to existing code without breaking anything.
@@ -143,7 +150,9 @@ The Iterator Pattern provides a way to access the internal objects of an aggrega
 
  ## State Design Pattern
 The State Pattern allows an object to alter its behavior when its internal state changes. The object will appear to change its class.
+
 ![Image](state.png)
+
 **Advantages**
 - Flexible
 - Single Responsibility Principle. Organize the code related to particular states into separate classes.
@@ -182,7 +191,9 @@ The Strategy Pattern defines a family of algorithms, encapsulates each one, and 
 
 ## Decorator Design Pattern
 The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+
 ![Image](decorator.png)
+
 **Advantages**
 - You can extend an object’s behavior without making a new subclass.
 - You can add or remove responsibilities from an object at runtime.
@@ -199,7 +210,9 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 
 ## Compound Pattern - MVC
 It is a common architectural pattern which is used to design and create interfaces and the structure of an application. This pattern divides the application into three parts that are dependent and connected to each other. These designs are used to distinguish the presentation of data from the way the data is accepted from the user to the data that is being shown.
+
 ![Image](mvc.png)
+
 **Advantages**
 - Multiple views can be made to models
 - The partition of duties helps the developer in future developments and upgradations.
