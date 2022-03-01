@@ -52,6 +52,24 @@ Where equivalent code exists in two related classes, the hierarchy can usually b
 - Maintenance: Every time you create a new sub class, you have to look at and possibly overwrite every method defined in the super class.
 - Problems when new sub class does not have behaviour of super class. E.g. RubberDuck can not fly() -> you need to overwrite the method in the sub class to do nothing -> not a good solution -> better: use interface Flyable (Problem with interface: completely destroys the reuse for those behaviours, so it just creates a different maintenance nightmare. E.g. imagine you want to make a little change to the flying behaviour.. in all 48 of the flying Duck subclasses. )
 
+## Singleton
+The Singleton Pattern ensures a class has only one instance and provides a global point of access to it.
+
+**Advantages**
+- Singleton instance fields don’t take up space in the global namespace
+- Singletons may be lazily initialized (to be discussed further)
+
+**Disadvantages**
+- Singleton causes code to be tightly coupled. The singleton object is exposed globally and is available to a whole application. Thus, classes using this object become tightly coupled; any change in the global object will impact all other classes using it.
+- They hide dependencies instead of exposing them.
+- Singleton Pattern does not support inheritance
+- Singleton principle can be violated by techniques such as cloning. If an application is running on multiple JVM’s, then, in this case, Singleton might be broken.
+
+**Singleton vs. static method**
+- Static classes don’t promote inheritance.
+- You cannot specify any creation logic with static methods
+
+
 
 ```markdown
 Syntax highlighted code block
@@ -71,4 +89,9 @@ Syntax highlighted code block
 [Link](url) and ![Image](src)
 ```
 
+## Singleton
 
+**Advantages**
+
+
+**Disadvantages**
