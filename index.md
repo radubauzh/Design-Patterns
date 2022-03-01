@@ -54,6 +54,7 @@ Where equivalent code exists in two related classes, the hierarchy can usually b
 
 ## Singleton Design Pattern
 The Singleton Pattern ensures a class has only one instance and provides a global point of access to it.
+
 ![Image](singleton.png)
 
 **Advantages**
@@ -165,7 +166,9 @@ The State Pattern allows an object to alter its behavior when its internal state
 
 ## Composite Design Pattern
 The Composite Pattern allows you to compose objects into tree structures to represent part-whole hierarchies. Composite lets clients treat individual objects and compositions of objects uniformly. (leaves)
+
 ![Image](composite.png)
+
 **Advantages**
 - You can work with complex tree structures more conveniently: use polymorphism and recursion to your advantage.
 - Open/Closed Principle. You can introduce new element types into the app without breaking the existing code, which now works with the object tree.
@@ -179,7 +182,9 @@ The Composite Pattern allows you to compose objects into tree structures to repr
 
 ## Strategy Design Pattern
 The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary independently from clients that use it.
+
 ![Image](strategy.png)
+
 **Advantages**
 - You can swap algorithms used inside an object at runtime.
 - You can isolate the implementation details of an algorithm from the code that uses it.
