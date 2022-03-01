@@ -228,28 +228,5 @@ It is a common architectural pattern which is used to design and create interfac
 - The views for a required model are grouped together.
 
 
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-## Design Pattern
-
-**Advantages**
-
-
-**Disadvantages**
+## Disclaimer
+I do not own those pictures. This repository is only for studying purposes. If you're the owner of them, just contact me.
