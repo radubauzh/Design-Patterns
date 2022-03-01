@@ -69,6 +69,14 @@ The Singleton Pattern ensures a class has only one instance and provides a globa
 - Static classes don’t promote inheritance.
 - You cannot specify any creation logic with static methods
 
+```markdown
+public static Singleton getInstance() {
+  if (uniqueInstance == null) {
+    synchronized (Singleton.class) {
+      if (uniqueInstance == null) {
+        uniqueInstance = new Singleton();
+```
+
 
 
 ```markdown
