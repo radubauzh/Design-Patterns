@@ -106,7 +106,28 @@ The observer pattern provides an object design where subjects and observers are 
 **Disadvantages**
 - Subscribers are notified in random order
 
+**Examples**
+Newspapers, Digital Clock, MVC Pattern, Datatable
 
+## Command Design Pattern
+The Command Pattern encapsulates a request as an object, thereby letting you parameterize other objects with different requests, queue or log requests, and support undoable operations.
+
+**Advantages**
+- Single Responsibility Principle. You can decouple classes that invoke operations from classes that perform these operations.
+- Open/Closed Principle. You can introduce new commands into the app without breaking existing client code.
+- You can implement undo/redo.
+- You can implement deferred execution of operations.
+- You can assemble a set of simple commands into a complex one.
+
+**Disadvantages**
+- The code may become more complicated since you’re introducing a whole new layer between
+ 
+ 
+ 
+ 
+ 
+ 
+ 
 ```markdown
 Syntax highlighted code block
 
