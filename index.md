@@ -87,7 +87,7 @@ The Adapter Pattern **converts the interface of a class into another interface**
 
 **Disadvantages**
 - The overall complexity of the code increases because you need to introduce a set of new interfaces and classes. Sometimes it’s simpler just to change the service class so that it matches the rest of your code.
-
+[Link](adapter.png) and ![Image](adapter.png)
 ## Observer Design Pattern
 The Observer Pattern defines a one-to-many dependency between objects to that when one object changes state, all of its dependents are notified and updates automatically.
 
