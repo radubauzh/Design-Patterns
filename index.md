@@ -36,7 +36,7 @@ A design pattern Consists of different parts
 **Well-known**
 - Can be used to communicate complex ideas more easily
 
-### Inheritance
+## Inheritance
 
 **Advantages**
 Minimize the amount of duplicate code in an application by sharing common code amongst several subclasses
