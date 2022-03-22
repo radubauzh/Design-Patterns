@@ -55,7 +55,6 @@ Where equivalent code exists in two related classes, the hierarchy can usually b
 ## Singleton Design Pattern
 The Singleton Pattern ensures a class has only one instance and provides a global point of access to it.
 
-![Image](singleton.png)
 <img src="singleton.png" alt="singleton" width="400"/>
 
 
